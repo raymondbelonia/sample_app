@@ -28,3 +28,24 @@ Then /^he should see a signout link$/ do
 	expect(page).to have_link('Sign out', href: signout_path)
 end
 
+Given /^a user visits the home page$/ do 
+	visit root_path
+end
+
+Given /^click on the sign up button$/ do
+	visit signup_path
+end
+
+When /^the user submits invalid signup information$/ do
+	click_button "Create my account"
+end
+
+When /^the user submits valid signup information$/ do
+	fill_in 'Name', :with => 'user1'
+	fill_in 'Email', :with => 'user1@example.com'
+	fill_in 'Password', :with => 'foobar'
+	fill_in 'Confirmation', :with => 'foobar'
+	click_button "Create my account"
+end
+
+
