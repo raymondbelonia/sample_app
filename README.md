@@ -6,8 +6,8 @@ by [Michael Hartl](http://michaelhartl.com/).
 
 I plan on adding modifications to the original sample application.  The proposed modifications are:
 
-Messaging Function
-Search Feature
-Password Reset Form
+Messaging Function, Search Feature and Password Reset Form.
+
+*Fixing Identions for Now.
 
 So far these are the only ones I can think of.
