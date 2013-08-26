@@ -12,6 +12,7 @@ gem 'mail', '2.5.3'
 group :development, :test do
   gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.0'
+  gem 'pry'
 end
 
 group :test do
@@ -20,6 +21,7 @@ group :test do
   gem 'factory_girl_rails', '4.2.1'
   gem 'cucumber-rails', '1.3.0', :require => false
   gem 'database_cleaner', '~> 1.0.0.RC1'
+  gem 'pry'
 end
 
 group :assets do
